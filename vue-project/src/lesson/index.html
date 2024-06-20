@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello zzh</title>
+</head>
+<body>
+Hello zzh
+</body>
+<script>
+    var data = {
+        name: "zzh",
+        address: "shanghai"
+    }
+
+
+
+    function Observer(obj) {
+        const keys = Object.keys(obj)
+        console.log("keys ", keys)
+        for (let key of keys) {
+            Object.defineProperty(this, key, {
+                get(){
+                    console.log("get")
+                    return obj[key]
+                },
+                set(val){
+                    console.log("set ", val)
+                    obj[key] = val
+                }
+            })
+        }
+    }
+
+    let obs = new Observer(data)
+    console.log("obs: ", obs)
+
+    function changeObs(){
+        obs.name = "zyn"
+    }
+
+    changeObs()
+
+    console.log("data: ", data)
+    console.log("obs: ", obs)
+
+</script>
+</html>

@@ -1,16 +1,23 @@
+<style>
+html,body,#app{height: 100%}
+</style>
 <script setup>
-import vbind from './components/v-bind.vue'
-import condition from './components/condition.vue'
-import vfor from './components/for.vue'
-// import events from './components/4-event.vue'
-import event2 from './components/5-event.vue'
-
-import compd from './components/7-computed.vue'
-
-import classBind from './components/8-class-bind.vue'
+// import mvvm from "./lesson/mvvm.vue"
+// import event from "./lesson/modifier.vue"
+// import vModel from "./lesson/v-model.vue"
+// import compute from "./lesson/compute.vue"
+// import watchs from "./lesson/watch.vue"
+// import weather from "./lesson/wath2.vue";
+// import styleA from "./lesson/style.vue";
+// import forTest from "./lesson/for.vue";
+// import sortFor from "./lesson/sort_for.vue";
 </script>
 
 <template>
+<!--  <sortFor />-->
+<!--  <forTest />-->
+<!--  <styleA />-->
+<!--  <weather />-->
   <!-- <vbind /> -->
   <!-- <condition /> -->
   <!-- <vfor /> -->
@@ -19,6 +26,9 @@ import classBind from './components/8-class-bind.vue'
   <!-- <events /> -->
   <!-- <event2 /> -->
   <!-- <compd /> -->
-  <classBind />
+  <!-- <mvvm /> -->
+  <!-- <event /> -->
+  <!-- <vModel /> -->
+<!--  <compute />-->
+<!--  <watchs />-->
 </template>
-

@@ -1,0 +1,14 @@
+.divred {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.divblue {
+    width: 60px;
+    height: 60px;
+    background-color: blue;
+    margin: 2px;
+    border-color: pink;
+    border-width: 1px;
+}
